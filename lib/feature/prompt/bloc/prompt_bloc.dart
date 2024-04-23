@@ -31,7 +31,7 @@ class PromptBloc extends Bloc<PromptEvent, PromptState> {
   FutureOr<void> promptInitialEvent(
       PromptInitialEvent event, Emitter<PromptState> emit) async {
     Uint8List bytes = await File(
-            '/Users/akshitmadan/Desktop/midjourney_flutter_app/assets/file.png')
+            '/Users/rohitnagula/midjourney_flutter_app/assets/img.webp')
         .readAsBytes();
     emit(PromptGeneratingImageSuccessState(bytes));
   }
